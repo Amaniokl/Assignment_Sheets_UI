@@ -69,3 +69,34 @@ A feature-rich spreadsheet application built with React, offering Excel-like fun
 - **Formula Engine**: Custom implementation
 - **Drag & Drop**: react-dnd
 - **Icons**: Lucide React
+
+
+## Features
+
+### Mathematical Functions
+1. **SUM**: `=SUM(A1:B5)` - Calculates sum of a cell range  
+2. **AVERAGE**: `=AVERAGE(C2:C10)` - Computes average value  
+3. **MAX**: `=MAX(D1:D20)` - Finds maximum value  
+4. **MIN**: `=MIN(E5:E15)` - Identifies minimum value  
+5. **COUNT**: `=COUNT(F1:F10)` - Counts numerical entries  
+
+### Data Quality Functions
+1. **TRIM**: `=TRIM(G7)` - Removes whitespace  
+2. **UPPER**: `=UPPER(H3)` - Converts to uppercase  
+3. **LOWER**: `=LOWER(I9)` - Converts to lowercase  
+4. **REMOVE_DUPLICATES**:  
+   ```excel
+   =REMOVE_DUPLICATES(A1:Z100)
+   ``` 
+5. **FIND_AND_REPLACE**:  
+   ```excel
+   =FIND_AND_REPLACE("old", "new", A1:C20)
+   ```
+
+### Data Entry & Validation
+- **Supported Data Types**:
+  - Numbers (`42`, `3.14`)
+  - Text (`"Sales Data"`)
+  - Dates (`2023-07-20`)
+  
+
