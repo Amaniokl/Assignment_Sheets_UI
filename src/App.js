@@ -53,7 +53,7 @@ function App() {
             <path d="M3 9h18"/>
             <path d="M9 3v18"/>
           </svg>
-          <h1>React Spreadsheet</h1>
+          <h1>Spreadsheet</h1>
         </div>
         <div className="app-actions">
           <button className="app-button" onClick={handleNewSheet}>
