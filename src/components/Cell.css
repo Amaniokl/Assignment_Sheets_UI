@@ -1,0 +1,75 @@
+.cell {
+  min-width: 100px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 15px;
+  position: relative;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+
+.cell:hover {
+  background: linear-gradient(135deg, #e0f2fe, #bfdbfe);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cell.selected {
+  border: 2px solid #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.5);
+}
+
+.cell-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 4px;
+  font-size: inherit;
+  font-weight: inherit;
+  text-decoration: inherit;
+  color: #374151;
+  outline: none;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px;
+}
+
+.cell-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 4px;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: bold;
+  font-size: 14px;
+  text-shadow: 0px 1px 2px rgba(220, 38, 38, 0.3);
+}
+
+.error-tooltip {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(220, 38, 38, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}

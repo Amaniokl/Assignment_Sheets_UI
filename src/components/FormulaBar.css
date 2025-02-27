@@ -1,0 +1,37 @@
+.formula-bar {
+  display: flex;
+  align-items: center;
+  background: #f3f4f6; /* Light gray background */
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.formula-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f2937; /* Dark gray text */
+  margin-right: 8px;
+}
+
+.formula-input {
+  flex: 1;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.formula-input:focus {
+  box-shadow: 0 0 4px rgba(59, 130, 246, 0.5); /* Blue glow */
+  border: 1px solid #3b82f6; /* Light blue border */
+}
+
+.formula-bar:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}

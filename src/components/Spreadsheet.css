@@ -1,0 +1,150 @@
+.spreadsheet {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f4f7fc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.grid {
+  flex: 1;
+  overflow: auto;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background: white;
+}
+
+.header-row, .row {
+  display: flex;
+  height: 32px;
+  min-width: 100px;
+}
+
+.corner-cell, .header-cell {
+  min-width: 80px;
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border: 1px solid #93c5fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  user-select: none;
+  position: relative;
+  color: #1e3a8a;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.corner-cell {
+  min-width: 40px;
+  background-color: #93c5fd;
+  color: white;
+  font-weight: bold;
+}
+
+.resize-handle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #60a5fa;
+  cursor: se-resize;
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.header-cell:hover .resize-handle {
+  opacity: 1;
+}
+
+.header-cell .resize-handle {
+  cursor: col-resize;
+  height: 100%;
+  top: 0;
+  width: 3px;
+  min-width: 100px;
+}
+
+.header-cell:first-child .resize-handle {
+  cursor: row-resize;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  min-width: 100px;
+}
+
+.cell {
+  border: 1px solid #e5e7eb;
+  padding: 0 8px;
+  font-size: 14px;
+  transition: background-color 0.1s;
+  min-width: 100px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+.cell:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+  background-color: #eff6ff;
+  z-index: 2;
+}
+
+.cell-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  background: transparent;
+}
+
+.cell-input:focus {
+  outline: none;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.chart-container {
+  position: relative;
+  width: 50%;
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f2fe, #bae6fd);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.close-chart-button {
+  position: absolute;
+  top: 65px;
+  left: 250px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+  z-index: 10;
+}
+
+.close-chart-button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  transform: scale(1.05);
+}
+
+.chart-container .chart-js {
+  max-width: 80%;
+  max-height: 80%;
+}
