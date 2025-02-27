@@ -1,6 +1,6 @@
 # SheetFlow - Modern Spreadsheet Application
 
-![SheetFlow Screenshot](screenshot.png) <!-- Add actual screenshot later -->
+![image](https://github.com/user-attachments/assets/38bc2172-f5e2-4bd2-90e8-81a1c8d43d51)
 
 A feature-rich spreadsheet application built with React, offering Excel-like functionality with modern UI/UX.
 
